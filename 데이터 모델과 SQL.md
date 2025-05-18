@@ -62,7 +62,7 @@
 ![image](https://github.com/user-attachments/assets/ad4b2441-bff4-43a8-a132-9ac40e752fe8)
 
 - 부분 테이블 추가
-- 
+
 ![image](https://github.com/user-attachments/assets/453676d2-5be4-4710-9b56-bde92189e4d2)
 - - -
 ### <컬럼 반정규화>
@@ -86,12 +86,18 @@ NULL
 
 ### <NULL이란?>
 - NULL은 존재하지 않음, 즉 값이 없을 의미한다.
+- 
 ![image](https://github.com/user-attachments/assets/901a9d2e-664c-4758-baba-4ddd07c1fe1a)
+
 위 데이터에서 대학생 강산의 수입은 0원이지만 프리랜서 이로운의 수입은 NULL이다. 두 개의 데이터가 갖는 의미는 엄연히 다르다. 결론적으로 이로운의 수입은 0원일 수도 있고 수천만 원일 수도 있다. 어떠한 사유로 데이터가 입력되지 않아 NULL값이 된 것이다.
 1) SELECT 수입 - 지출 FROM 테이블
+
 ![image](https://github.com/user-attachments/assets/5535ab2e-d853-42e6-babe-b1cb6f6a066f)
+
 -> 가로 연산 : NULL이 포함되어 있으면 결과값은 NULL이 된다.
-2) SELECT SUM(수입) FROM 테이블
+3) SELECT SUM(수입) FROM 테이블
+
 ![image](https://github.com/user-attachments/assets/b0923348-e935-4de3-96a4-9c4894787145)
+
 -> 세로 연산 : 다른 인스턴스의 데이터와 연산할 때는 NULL값을 제외한다.
 
