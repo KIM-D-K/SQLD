@@ -39,9 +39,13 @@
 ![image](https://github.com/user-attachments/assets/ac35b15c-fa29-4f0c-89d5-a25fabe7a742)
 1) 테이블 병합 : 업무 프로세스상 JOIN이 필요한 경우가 많아 테이블을 통합하는 것이 성능 측면에서 유리할 경우 고려한다. 1 : M 관계 테이블 병합의 경우 1쪽에 해당하는 엔터티의 속성 개수가 많으면 병합했을 경우 중복 데이터가 많아지므로 테이블 병합에 적절하지 못하다.
 - 1 : 1 관계 테이블 병합
+
 ![image](https://github.com/user-attachments/assets/ecfedce2-a971-41e3-9138-6cb4f1fcd5b4)
+
 - 1 : M 관계 테이블 병합
+
 ![image](https://github.com/user-attachments/assets/71bb8421-298c-421f-abb5-ea7e0de664f5)
+
 2) 테이블 분할
 - 테이블 수직 분할 : 엔터티의 일부 속성을 별도의 엔터티로 분할(1 : 1 관계 성립)한다.
 ![image](https://github.com/user-attachments/assets/c387682e-e3ee-452e-a175-4595cbf354bb)
