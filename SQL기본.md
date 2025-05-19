@@ -13,7 +13,7 @@
 ![image](https://github.com/user-attachments/assets/11ff0fd2-79e3-4857-a6b7-8c55154a9164)
 - 테이블 형태
 
-![image](https://github.com/user-attachments/assets/08bdd9cc-8b1a-4c0d-8b5b-9b999039ffbd)
+ ![image](https://github.com/user-attachments/assets/08bdd9cc-8b1a-4c0d-8b5b-9b999039ffbd)
 
 테이블은 관계형 데이터베이스의 기본 단위이고 일반적으로 데이터베이스는 여러 개의 테이블로 구성된다. 아렇게 데이터를 저장하는 주된 목적은 데이터를 활용하는 데에 있고 우리는 그것을 테이블 형태로 조회하고 변경하고 삭제할 수 있다.
 - - -
