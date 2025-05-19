@@ -9,7 +9,7 @@
  정의하는 것으로 시작된다. RDBMS(Relational Database Management System)는 이러한 RDB를 관리 · 감독하기 위한 시스템이며, 우리가 익히 알고 있는 Oracle, SQL Server(MSSQL), MySQL, MariaDB, PostgreSQL 등이 이에 속한다.
 - - -
 
-### <TABLE>
+### <테이블>
 
 1) 관계형 데이터베이스는 모든 데이터를 2차원 테이블 형태로 표현한다. 2차원 테이블 형태는 우리가 엑셀을 작성할 때 흔히 이용하는 표 형식을 떠올라면 이해하기 쉽다. (아래 그림 엑셀 예시)
 
