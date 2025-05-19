@@ -133,10 +133,10 @@ SELECT문
 - - -
 ### <NULL 관련 함수>
 1) NVL(인수1, 인수2) : 인수 1의 값이 NULL일 경우 인수2를 반환하고 NULL이 아닐 경우 인수1을 반환해주는 함수이다. (SQL Server(MSSQL)의 경우 ISNULL(인수1, 인수2))
-![image](https://github.com/user-attachments/assets/315c6785-c6fe-4140-9657-715773426fcb)
+![image](https://github.com/user-attachments/assets/0c99509c-8e28-485c-8698-a0c51dec20d9)
 ![image](https://github.com/user-attachments/assets/cda7a735-1943-471e-af6d-d408d37e1ba4)
 2) NULLIF(인수1, 인수2) : 인수1과 인수2가 같으면 NULL을 반환하고 같지 않으면 안수1을 반환해주는 함수이다. 
-![image](https://github.com/user-attachments/assets/1becdd63-5b22-4a79-88e5-d253b6205539)
+![image](https://github.com/user-attachments/assets/cec33b48-0c33-4535-8b53-876c4250c016)
 ![image](https://github.com/user-attachments/assets/a8094730-a213-484c-ab30-ba245a73731a)
 
 
