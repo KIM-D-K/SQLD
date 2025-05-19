@@ -12,7 +12,9 @@
 1) 관계형 데이터베이스는 모든 데이터를 2차원 테이블 형태로 표현한다. 2차원 테이블 형태는 우리가 엑셀을 작성할 때 흔히 이용하는 표 형식을 떠올라면 이해하기 쉽다. (아래 그림 엑셀 예시)
 ![image](https://github.com/user-attachments/assets/11ff0fd2-79e3-4857-a6b7-8c55154a9164)
 - 테이블 형태
+- 
 ![image](https://github.com/user-attachments/assets/08bdd9cc-8b1a-4c0d-8b5b-9b999039ffbd)
+
 테이블은 관계형 데이터베이스의 기본 단위이고 일반적으로 데이터베이스는 여러 개의 테이블로 구성된다. 아렇게 데이터를 저장하는 주된 목적은 데이터를 활용하는 데에 있고 우리는 그것을 테이블 형태로 조회하고 변경하고 삭제할 수 있다.
 - - -
 ### <SQL(Structured Query Language)>
