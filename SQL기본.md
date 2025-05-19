@@ -29,16 +29,21 @@ SELECT문
 
 ### <조회>
 - 저장되어 있는 데이터를 조회하고자 할 때 사용하는 명령어이다.
+- 
 ![image](https://github.com/user-attachments/assets/3f239b01-3472-482c-9501-601897b22d42)
+
 컬럼을 따로 명시하지 않고 *(asterisk)를 쓰면 전체 컬럼이 조회되며 조회되는 컬럼의 순서는 테이블의 컬럼 순서와 동일하다. 그리고 별도의 WHERE 절이 없으면 테이블의 전체 Row가 조회된다.
+
 ![image](https://github.com/user-attachments/assets/9ce7ae41-41ab-4416-9787-68db95f102ea)
+
 테이블명이나 컬럼명에 별도의 별칭(Alias)을 붙여줄 수 있는데, 붙여주는 목적은 요즘 우리가 줄임말을 즐겨 쓰는 이유와 비슷하다. 여러 개의 테이블을 JOIN하거나 서브쿼리가 있을 때 컬럼명 앞에 테이블명을 같이 명시해야 하는 경우
  테이블명은 비교적 길기 때문에 짧게 줄여 쓰기 위해 Alias를 붙여 주는 것이다. Alias를 붙일 때는 앞에 AS를 넣어도되고 넣지 않아도 된다.
+ 
 ![image](https://github.com/user-attachments/assets/853bc19b-1526-4dd4-9203-2f51c0e43a30)
 - - -
 ### <산술 연산자>
 - 수학에서 사용하는 사칙연산의 기능을 가진 연산자이다. NUMBER나 DATE 유형의 데이터와 같이 사용할 수 있으며, 다른 컬럼끼리의 연산에 NULL이 포함되어 있는 경우 결과값은 NULL이 된다.
-- 
+
 ![image](https://github.com/user-attachments/assets/f3ba212c-40a3-4c69-b396-49bf96866c81)
 - - -
 ### <합성 연산자>
