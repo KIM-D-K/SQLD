@@ -53,7 +53,12 @@ SELECT문
 ![image](https://github.com/user-attachments/assets/39741818-6094-4c73-bb64-6a3346d50993)
 3) UPPER(문자열) : 문자열을 대문자로 변환해주는 함수이다.
 ![image](https://github.com/user-attachments/assets/5c3c8f0c-a33e-4c1c-b4fe-588d2f7808a5)
-4) LTRIM(문자열 [,특정 문자]) *[]는 옵션 : 특정 문자를 따로 명시해주지 않으면 문자열의 왼쪽 공백을 제거하고, 명시해주었을 경우 문자열을 왼쪽부터 한 글자씩 특정 문자와 비교하여 특정 문자에 포함되어 있으면 제거하고 포함되지 않았으면 멈춘다. 
+4) LTRIM(문자열 [,특정 문자]) *[]는 옵션 : 특정 문자를 따로 명시해주지 않으면 문자열의 왼쪽 공백을 제거하고, 명시해주었을 경우 문자열을 왼쪽부터 한 글자씩 특정 문자와 비교하여 특정 문자에 포함되어 있으면 제거하고 포함되지 않았으면 멈춘다. (SQL Server(MSSQL)의 경우 공백 제거만 가능하다.)
+![image](https://github.com/user-attachments/assets/6509f720-6aaa-41e0-89f8-a2d497e00f5c)
+![image](https://github.com/user-attachments/assets/532699c1-f10d-4022-8e7d-3790e78405d6)
+5) RTRIM(문자열 [,특정 문자] *[]는 옵션 : 특정 문자를 따로 명시해주지 않으면 문자열의 오른쪽 공백을 제거하고, 명시해주었을 경우 문자열을 오른쪽부터 한 글자씩 특정 문자와 비교하여 특정 문자에 포함되어 있으면 제거하고 포함되지 않았으면 멈춘다. (SQL Server(MSSQL)의 경우 공백 제거만 가능하다.)
+![image](https://github.com/user-attachments/assets/252f0e8c-020b-4c81-952a-c4e215090362)
+![image](https://github.com/user-attachments/assets/12d48015-287f-4034-8f45-b0a0e7787e4f)
 
 
 
