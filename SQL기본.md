@@ -38,6 +38,7 @@ SELECT문
 - - -
 ### <산술 연산자>
 - 수학에서 사용하는 사칙연산의 기능을 가진 연산자이다. NUMBER나 DATE 유형의 데이터와 같이 사용할 수 있으며, 다른 컬럼끼리의 연산에 NULL이 포함되어 있는 경우 결과값은 NULL이 된다.
+- 
 ![image](https://github.com/user-attachments/assets/f3ba212c-40a3-4c69-b396-49bf96866c81)
 - - -
 ### <합성 연산자>
