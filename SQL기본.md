@@ -48,6 +48,14 @@ SELECT문
 
 ### <문자 함수>
 1) CHR(ASCII 코드) : ASCII 코드는 총 128개의 문자를 숫자로 표현할 수 있도록 정의해 놓은 코드이다. CHR 함수는 ASCII 코드를 인수로 입력했을 때 매핑되는 문자가 무엇인지를 알려주는 함수이다. (SQL Server(MSSQL)의 경우 CHAR(ASCII 코드)
+![image](https://github.com/user-attachments/assets/6431f1f1-1869-4572-9e0a-5d3742c049f4)
+2) LOWER(문자열) : 문자열을 소문자로 변환해주는 함수이다.
+![image](https://github.com/user-attachments/assets/39741818-6094-4c73-bb64-6a3346d50993)
+3) UPPER(문자열) : 문자열을 대문자로 변환해주는 함수이다.
+![image](https://github.com/user-attachments/assets/5c3c8f0c-a33e-4c1c-b4fe-588d2f7808a5)
+4) LTRIM(문자열 [,특정 문자]) *[]는 옵션 : 특정 문자를 따로 명시해주지 않으면 문자열의 왼쪽 공백을 제거하고, 명시해주었을 경우 문자열을 왼쪽부터 한 글자씩 특정 문자와 비교하여 특정 문자에 포함되어 있으면 제거하고 포함되지 않았으면 멈춘다. 
+
+
 
 
 
