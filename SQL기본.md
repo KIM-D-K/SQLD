@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/aa583d64-f352-4b8c-978f-db9eda645937)![image](https://github.com/user-attachments/assets/28d6bdd5-f33a-4311-8228-1626d9a91036)관계형 데이터베이스 개요
+관계형 데이터베이스 개요
 ========================
 
 ### <데이터베이스>
