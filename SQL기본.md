@@ -1,4 +1,4 @@
-관계형 데이터베이스 개요
+![image](https://github.com/user-attachments/assets/aa583d64-f352-4b8c-978f-db9eda645937)![image](https://github.com/user-attachments/assets/28d6bdd5-f33a-4311-8228-1626d9a91036)관계형 데이터베이스 개요
 ========================
 
 ### <데이터베이스>
@@ -62,6 +62,71 @@ SELECT문
 5) RTRIM(문자열 [,특정 문자] *[]는 옵션 : 특정 문자를 따로 명시해주지 않으면 문자열의 오른쪽 공백을 제거하고, 명시해주었을 경우 문자열을 오른쪽부터 한 글자씩 특정 문자와 비교하여 특정 문자에 포함되어 있으면 제거하고 포함되지 않았으면 멈춘다. (SQL Server(MSSQL)의 경우 공백 제거만 가능하다.)
 ![image](https://github.com/user-attachments/assets/252f0e8c-020b-4c81-952a-c4e215090362)
 ![image](https://github.com/user-attachments/assets/12d48015-287f-4034-8f45-b0a0e7787e4f)
+6) TRIM([위치][특정문자][FROM]문자열) *[]는 옵션 : 옵션이 하나도 없을 경우 문자열의 왼쪽과 오른쪽 공백을 제거하고, 그렇지 않을 경우 문자열을 위치(LEADING or TRAILING or BOTH)로 지정된 곳부터 한 글자씩 특정 문자와 비교하여 같으면 제거하고 같지 않으면 멈춘다. LTRIM, RTRIM과는 달리 특정 문자는 한글자만 지정할 수 있다. (SQL Server(MSSQL)의 경우 공백 제거만 가능하다.)  
+![image](https://github.com/user-attachments/assets/7d29bd7f-1dc4-4dac-869e-29e70e9a5060)
+![image](https://github.com/user-attachments/assets/92b82761-60fd-4018-849c-8ee6e6ea60dc)
+![image](https://github.com/user-attachments/assets/55b0de47-913e-438d-bee0-2c3763920767)
+7) SUBSTR(문자열, 시작점 [,길이]) *[]는 옵션 : 문자열의 원하는 부분만 잘라서 반환해주는 함수이다. 길이를 명시하지 않았을 경우 문자열의 시작점부터 문자열의 끝까지 반환된다. (SQL Server(MSSQL)의 경우 SUBSTRING(문자열))
+![image](https://github.com/user-attachments/assets/28af9439-f018-4430-8f24-37d8d4519965)
+![image](https://github.com/user-attachments/assets/cfa83246-4b38-4698-9c3c-2312b741c355)
+8) LENGTH(문자열) : 문자열의 길이를 반환해주는 함수이다. (SQL Server(MSSQL)의 경우 LEN(문자열))
+![image](https://github.com/user-attachments/assets/7324bdbb-5b8d-409a-883d-2686d7ea4906)
+![image](https://github.com/user-attachments/assets/087c9d43-762a-4233-a5ab-a3bb4832bdd5)
+9) REPLACE(문자열, 변경 전 문자열 [,변경 후 문자열]) *[]는 옵션 : 문자열에서 변경 전 문자열을 찾아 변경 후 문자열로 바꿔주는 함수이다. 변경 후 문자열을 명시해주지 않으면 문자열에서 변경 전 문자열을 제거한다.
+![image](https://github.com/user-attachments/assets/7fa3fe96-82c1-48f0-bbf0-0e568b841a45)
+![image](https://github.com/user-attachments/assets/985fba8c-14d9-4091-9531-ceb889ece10b)
+10) LPAD(문자열, 길이, 문자) : 문자열이 설정한 길이가 될 때까지 왼쪽을 특정 문자로 채우는 함수이다. 
+![image](https://github.com/user-attachments/assets/5f2d7888-3f10-48f6-a5d7-ed93389572a3)
+- - -
+
+### <숫자 함수>
+1) ABS(수) : 수의 절댓값을 반환해주는 함수이다.
+![image](https://github.com/user-attachments/assets/9c26a6a9-8934-4cb9-8fe3-eacdd4d10ccb)
+![image](https://github.com/user-attachments/assets/4237ff58-7dc1-4188-8480-3e1898ba5609)
+2) SIGN(수) : 수의 부호를 반환해주는 함수이다. 양수이면 1, 음수이면 -1, 0이면 0을 반환한다.
+![image](https://github.com/user-attachments/assets/9240fd40-0084-4306-907e-5056b09d52fd)
+![image](https://github.com/user-attachments/assets/010fe721-4e0a-421e-a2aa-73596ba83892)
+3) ROUND(수 [,자리수]) *[]는 옵션 : 수를 지정된 소수점 자릿수까지 반올림하여 반환해주는 함수이다. 자릿수를 명시하지 않았을 경우 기본값은 0이며 반올림된 정수로 반환하고 자릿수가 음수일 경우 지정된 정수부를 반올림하여 반환한다.
+![image](https://github.com/user-attachments/assets/e823e370-a406-4acd-99b7-da5bb159cb9b)
+![image](https://github.com/user-attachments/assets/ddda079b-dfcf-41e1-86ad-edf7074d9c1a)
+4) TRUNC(수 [,자릿수]) *[]는 옵션 : 수를 지정된 소수점 자릿수까지 버림하여 반환해주는 함수이다. 자릿수를 명시하지 않았을 경우 기본값은 0이며 버림된정수로 반환하고 자릿수가 음수일 경우 지정된 정수부에서 버림하여 반환한다.
+![image](https://github.com/user-attachments/assets/70588667-7e84-4c66-9ab6-34ba3693d8d1)
+![image](https://github.com/user-attachments/assets/21892db5-d0f2-4829-b4ca-5212538e4090)
+5) CEIL(수) : 소수점 이하의 수를 올림한 정수를 반환해주는 함수이다. (SQL Server(MSSQL)의 경우 CEILING(문자열))
+![image](https://github.com/user-attachments/assets/95947830-643e-4f5e-83e8-570e5b4dcb74)
+![image](https://github.com/user-attachments/assets/3b0f5011-bd9c-4c19-a502-8dbba934b3ca)
+6) FLOOR(수) : 소수점 이하의 수를 버림한 정수를 반환해주는 함수이다.
+![image](https://github.com/user-attachments/assets/ccb0444e-12b2-4410-8498-702ec525e1fd)
+![image](https://github.com/user-attachments/assets/6ffd24af-1c0a-45f8-94db-e8e752208b52)
+7) MOD(수1, 수2) : 수1을 수2로 나눈 나머지를 반환해주는 함수이다. 단, 수2가 0일 경우 수1을 반환한다.
+![image](https://github.com/user-attachments/assets/4e01177e-f6b2-4503-92db-5466a35e7380)
+![image](https://github.com/user-attachments/assets/345f76bc-3860-47dd-9da6-2d5fb3cea56c)
+- - -
+### <날짜 함수>
+1) SYSDATE : 현재의 연, 월, 일, 시, 분, 초를 반환해주는 함수이다(nls_date_format에 따라서 sysdate의 출력 양식은 달라질 수 있음). (SQL Server(MSSQL)의 경우 GETDATE())
+![image](https://github.com/user-attachments/assets/6a4ab10a-9537-4055-8c4a-1d57e17dfecf)
+2) EXTRACT(특정 단위 FROM 날짜 데이터) : 날짜 데이터에서 특정 단위(YEAR, MONTH, DAY, HOUR, MINUTE, SECOND)만을 출력해서 반환해주는 함수이다. (SQL Server(MSSQL)의 경우 DATEPART(특정 단위, 날짜 데이터))
+![image](https://github.com/user-attachments/assets/65fdebcb-52c7-49da-b896-0690a1149632)
+3) ADD_MONTHS(날짜 데이터, 특정 개월 수) : 날짜 데이터에서 특정 개월 수를 더한 날짜를 반환해주는 함수이다. 날짜의 이전 달이나 다음 달에 기준 날짜의 일자가 존재하지 않으면 해당 월의 마지막 일자가 반환된다. (SQL Server(MSSQL)의 경우 DATEADD(MONTH, 특정 개월 수, 날짜 데이터))
+![image](https://github.com/user-attachments/assets/ea5faebe-386d-4daf-961e-3b0b5e4fb03b)
+- - -
+### <변환 함수>
+1) 명시적 형변환과 암시적 형변환
+  - 명시적 형변환 : 변환 함수를 사용하여 데이터 유형 변환을 명시적으로 나타냄
+  - 암시적 형변환 : 데이터베이스가 내부적으로 알아서 데이터 유형을 변환함
+2) 명시적 형변환에 쓰이는 함수 (SQL Server(MSSQL)의 경우 CONVERT나 CAST 함수를 사용할 수 있다.)
+  - TO_NUMBER(문자열) : 문자열을 숫자형으로 변환해주는 함수이다.
+  ![image](https://github.com/user-attachments/assets/fd933fef-3e3d-4dd1-94af-6182522f2d20)
+  ![image](https://github.com/user-attachments/assets/ba98d8fe-3204-434f-9403-4a908f18cf26)
+  - TO_CHAR(수 or 날짜[, 포맷]) *[]는 옵션 : 수나 날짜형의 데이터를 포맷 형식의 문자형으로 변환해주는 함수이다.
+  ![image](https://github.com/user-attachments/assets/aacb1210-fcee-45d2-8e2e-247ab147fd44)
+  ![image](https://github.com/user-attachments/assets/c7a6d12c-918f-4f8a-a2e1-55a5faea8881)
+  - TO_DATE(문자열, 포맷) : 포맷 형식의 문자형의 데이터를 날짜형으로 변환해주는 함수이다.
+  ![image](https://github.com/user-attachments/assets/5c2e32ae-0a4c-45f5-ab17-d57bb11ee48c)
+  ![image](https://github.com/user-attachments/assets/20f90418-1666-415f-8922-f808948238fd)
+- - -
+### <NULL 관련 함수>
+
 
 
 
