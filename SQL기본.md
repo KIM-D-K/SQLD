@@ -138,10 +138,41 @@ SELECT문
 2) NULLIF(인수1, 인수2) : 인수1과 인수2가 같으면 NULL을 반환하고 같지 않으면 안수1을 반환해주는 함수이다. 
 ![image](https://github.com/user-attachments/assets/cec33b48-0c33-4535-8b53-876c4250c016)
 ![image](https://github.com/user-attachments/assets/a8094730-a213-484c-ab30-ba245a73731a)
+3) COALESCE(인수1, 인수2, 인수3....) : NULL이 아닌 최초의 인수를 반환해주는 함수이다.
+![image](https://github.com/user-attachments/assets/14bfc013-518f-4ae9-b5f5-26027d754ac9)
+![image](https://github.com/user-attachments/assets/41d13075-fdf9-4410-9e83-5c90e24f8482)
+4) NVL2(인수1, 인수2, 인수3) : 인수1이 NULL이 아닌 경우 인수2를 반환하고 NULL인 경우 인수3을 반환하는 함수이다.
+![image](https://github.com/user-attachments/assets/20a7795d-aadc-4ae2-83c9-35064260304e)
+![image](https://github.com/user-attachments/assets/6866fa4b-0e94-484a-88c4-33b5f806ef71)
+- - -
+### <CASE 함수>
+1) CASE는 함수와 성격이 같기는 하지만 표현 방식이 함수라기보다는 구문에 가깝다고 할 수 있다. 문장으로는 '~이면 ~이고, ~이면 ~이다' 식으로 표현되는 구문이고 필요에 따라 각 CASE를 여러 개로 늘릴 수도 있다. 같은 기능을 하는 함수로는 Oracle의 DECODE 함수가 있다.
+![image](https://github.com/user-attachments/assets/add2385b-0970-411d-96b3-b467b3db789f)
+![image](https://github.com/user-attachments/assets/fb56ff97-f110-4993-b1b1-5566b7715a9c)
+![image](https://github.com/user-attachments/assets/15528168-1c91-4382-8a07-bacd5f7d3dcf)
+![image](https://github.com/user-attachments/assets/04478e62-0377-4a82-81ba-8a86d559625d)
+![image](https://github.com/user-attachments/assets/0a072e95-d6a3-4eb9-bba5-10959ed07939)
+- CASE 문에서는 ELSE 뒤의 값이 DEFAULT 값이 되고 별도의 ELSE가 없을 경우 NULL 값이 DEFAULT 값이 된다.
+- - -
 
+WHERE절
+----------
 
+### <WHERE절>
+1) INSERT를 제외한 DML문을 수행할 때 원하는 데이터만 골라 수행할 수 있도록 해주는 구문이다.
+- - -
 
+### <비교 연산자>
+![image](https://github.com/user-attachments/assets/73bef32b-2266-4f6a-8558-fa6f2a139ae5)
+- 다음 쿼리는 CITY가 Paris인 행을 조회한다.\
+![image](https://github.com/user-attachments/assets/4ec03792-bf1e-47d1-8268-62b5bf7374f2)
+- 다음 쿼리는 MEMBER_NO가 10보다 작은 행을 조회한다.
+![image](https://github.com/user-attachments/assets/7101bae3-c8cd-4c35-a043-f8c7f000400d)
+- 다음 쿼리는 FIRST_NAME과 Mark의 데이터 타입이 맞지 않아 에러가 발생한다.
+![image](https://github.com/user-attachments/assets/f0557ed9-3e87-44a1-8c3f-1c38f0b16734)
+- - -
 
-
-
-
+### <부정 비교 연산자>
+![image](https://github.com/user-attachments/assets/cd95a76f-e60d-4e5c-b848-a38fe56e9122)
+- 다음 쿼리는 FAVORITES이 Y가 아닌 행을 조회한다.
+![image](https://github.com/user-attachments/assets/913bba75-6417-43a1-a122-ffa897beab44)
